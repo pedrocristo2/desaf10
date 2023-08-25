@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(237, 237, 237);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+p {
+    text-align: justify;
+}
+
+:root {
+    --cor1:#4000ff;
+    --cor2:#5222e1;
+    --cor3:#29088e;
+    --cor4:#17054a;
+    --cor5:#11003e;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+main {
+    background-color: white;
+    min-width: 280;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.542);
+}
+
+main a {
+    color: #4f4e50;
+    text-decoration: none;
+}
+
+main a::before {
+    content: '\1F517';
+}
+
+
+main p {
+    text-align: justify;
+    margin: 10px 0px;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+}
+
+main  strong {
+    background-color: rgba(50, 97, 205, 0.218);
+}
+
+main > h2 {
+    background-image: linear-gradient(to right, var(--cor1), transparent)
+}
+
+article > h2 {
+    background-image: linear-gradient(to right, var(--cor1), transparent) ;
+}
+
+
+
+nav {
+    background-color: var(--cor5);
+    padding: 8px;
+    position: sticky;
+    top: 200px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.491);
+}
+
+nav > a {
+    padding: 5px;
+    color:rgb(160, 168, 215);
+    margin: 5px;
+    text-decoration: none;
+}
+
+nav >:hover {
+    background-color: var(--cor1) ;
+    border-radius: 6px;
+    color: var(--cor4);
+    transition-duration: .5s;
+    text-decoration: underline;
+}
+
+header {
+    background-image:linear-gradient(to bottom, var(--cor1),var(--cor2), var(--cor3), var(--cor4), var(--cor5));
+    padding: 40px;    
+    position: sticky;
+    top: 0px;
+}
+
+header > h1 {
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+
+
+header > img {
+   margin: auto;
+   border-radius: 50%;
+   width: 30px;
+   padding: 5px;
+   display:inline-block;
+   
+}
+
+footer{
+    background-color: black;
+    color: white;
+      padding: 20px;
+  
+     position:sticky ;
+     bottom: 0;
+    text-align: center;
+}
+
+footer > p {
+    color: white;
+    text-align: center;
+}
+
+ main img {
+    width: 100%;
+    padding-top:10px;
+    padding-bottom: 10px;
+ }
+
+ aside.curiosidade{
+    background-color:rgba(132, 127, 127, 0.697);
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.246);
+ }
+
+ aside.curiosidade > h2 {
+    background-color: rgba(129, 119, 107, 0.756);
+    padding: 5px;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+ }
+
+ aside.curiosidade > ul {
+    list-style-type: none;
+    list-style-position: inside;
+    list-style-type: '\2714\00A0\00A0';
+    columns: 2;
+    margin: 10px;
+    padding: 5px;
+ }
+
+
+ aside.curiosidade > p {
+    padding: 10px;
+ }
+
+ aside.koala > h1 {
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+ }
